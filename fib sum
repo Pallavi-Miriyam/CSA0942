@@ -1,0 +1,27 @@
+mport java.util.Scanner;
+public class Exam
+{
+    public static void main(String args[])
+    {
+        Scanner input=new Scanner(System.in);
+       int n=input.nextInt();
+       int a[]=new int[50];
+       int a1=0;
+       int a2=1;
+       int a3;
+       for(int i=0;i<10;i++)
+       {
+           a[i]=a1;
+           System.out.print(a[i]+" ");
+           a3=a1+a2;
+           a1=a2;
+           a2=a3;
+       }
+       int sum=0;
+       for(int i=0;i<=n*2;i=i+2)
+       {
+           sum=sum+a[i];
+       }
+       System.out.print(sum);
+    }
+}
